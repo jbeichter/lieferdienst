@@ -1,21 +1,24 @@
 {
-    "name": "jbeichter/lieferdienst",
-    "description": "Manage orders and deliveries.",
-    "type": "project",
-    "license": "GPLv2 or later",
-    "authors": [
-        {
-            "name": "Johannes Beichter",
-            "email": "jbeichter@gmx.de"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {},
-    "autoload": {
-    	"psr-4": {"Inc\\": "./inc"}
-    },
-    "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.6",
-        "phpcompatibility/phpcompatibility-wp": "*"
+  "name": "jbeichter/lieferdienst",
+  "description": "Manage orders and deliveries.",
+  "type": "project",
+  "license": "GPLv2 or later",
+  "authors": [
+    {
+      "name": "Johannes Beichter",
+      "email": "jbeichter@gmx.de"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "lieferdienst\\Inc\\": "./inc"
+    }
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.6",
+    "phpcompatibility/phpcompatibility-wp": "*",
+    "wp-coding-standards/wpcs": "*"
+  }
 }
