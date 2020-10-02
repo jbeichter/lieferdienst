@@ -1,5 +1,4 @@
-[![Build Status](https://api.travis-ci.org/jbeichter/lieferdienst.svg)](https://travis-ci.org/jbeichter/lieferdienst)
-
+<img src="https://api.travis-ci.org/jbeichter/lieferdienst.svg" alt="Build Status">
 
 === Lieferdienst ===
 Contributors: (this should be a list of wordpress.org userid's)
