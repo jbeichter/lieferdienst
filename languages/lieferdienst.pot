@@ -1,10 +1,10 @@
 # Copyright (C) 2020 Johannes Beichter
-# This file is distributed under the same license as the Lieferdienst package.
+# This file is distributed under the GPLv2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Lieferdienst 0.1.0\n"
+"Project-Id-Version: Lieferdienst\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lieferdienst\n"
-"POT-Creation-Date: 2020-10-02 11:00:29+00:00\n"
+"POT-Creation-Date: 2020-10-02 13:46:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"

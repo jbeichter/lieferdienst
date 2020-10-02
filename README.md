@@ -1,7 +1,6 @@
 # Lieferdienst #
 [![Build Status](https://api.travis-ci.org/jbeichter/lieferdienst.svg)](https://travis-ci.org/jbeichter/lieferdienst)
 
-
 **Contributors:** [(this should be a list of wordpress.org userid's)](https://profiles.wordpress.org/(this should be a list of wordpress.org userid's))  
 **Donate link:** https://example.com/  
 **Tags:** comments, spam  

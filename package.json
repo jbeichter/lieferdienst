@@ -1,8 +1,9 @@
 {
   "name": "lieferdienst",
   "version": "0.1.0",
+  "license": "GPL-2.0-or-later",
   "main": "Gruntfile.js",
-  "author": "YOUR NAME HERE",
+  "author": "Johannes Beichter",
   "scripts": {
     "start": "grunt default",
     "readme": "grunt readme",
