@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d3f75fecbd05faed791a547f6887767",
+    "content-hash": "435e0d7817530fe3eb20d38c4a338a8f",
     "packages": [],
     "packages-dev": [
         {
@@ -1175,6 +1175,37 @@
                 "xunit"
             ],
             "time": "2020-01-08T08:45:45+00:00"
+        },
+        {
+            "name": "rosio/wordpress-testing-harness",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rosio/wordpress-testing-harness.git",
+                "reference": "21d0251e9e74620f1138fcab094484a9624f109d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rosio/wordpress-testing-harness/zipball/21d0251e9e74620f1138fcab094484a9624f109d",
+                "reference": "21d0251e9e74620f1138fcab094484a9624f109d",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "johnpbloch/wordpress": "Good WordPress copy to work off of.  This library is preconfigured to work with this package.",
+                "mockery/mockery": "Simplifies the mocking of objects"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Makes testing plugins and themes with WordPress and Composer much easier",
+            "time": "2014-06-11T22:50:32+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
