@@ -5,7 +5,7 @@
  * @package Lieferdienst
  */
 
-namespace lieferdienst\Inc;
+namespace Lieferdienst\Inc;
 
 /**
  * Initialize the plugin's service classes.
@@ -17,15 +17,15 @@ class Init {
 	 *
 	 * @return array List of service classes
 	 */
-	public static function get_services() {
+	public static function getServices() {
 		return array();
 	}
 
 	/**
 	 * Instantiate services and register them with WordPress.
 	 */
-	public static function register_services() {
-		foreach ( self::get_services() as $class ) {
+	public static function registerServices() {
+		foreach ( self::getServices() as $class ) {
 			$service = new $class();
 			if ( method_exists( $service, 'register' ) ) {
 				$service->register();

@@ -5,7 +5,7 @@
  * @package Lieferdienst
  */
 
-namespace lieferdienst\Inc\Base;
+namespace Lieferdienst\Inc\Base;
 
 /**
  * This class contains the callbacks used to control the activation and deactivation of the plugin.
