@@ -5,6 +5,8 @@
  * @package Lieferdienst
  */
 
+require_once dirname( __DIR__ ) . '/vendor/autoload.php';
+
 $_lieferdienst_tests_dir = getenv( 'WP_TESTS_DIR' );
 
 if ( ! $_lieferdienst_tests_dir ) {

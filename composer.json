@@ -10,7 +10,9 @@
     }
   ],
   "minimum-stability": "dev",
-  "require": {},
+  "require": {
+    "php": ">=5.6.0"
+  },
   "autoload": {
     "psr-4": {
       "Lieferdienst\\Inc\\": "./inc"
@@ -19,6 +21,7 @@
   "require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "^0.6",
     "phpcompatibility/phpcompatibility-wp": "*",
-    "wp-coding-standards/wpcs": "*"
+    "wp-coding-standards/wpcs": "*",
+    "php-mock/php-mock-phpunit": "2.1.2"
   }
 }
