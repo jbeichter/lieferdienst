@@ -18,7 +18,11 @@ class Init {
 	 * @return array List of service classes
 	 */
 	public static function getServices() {
-		return array();
+		return array(
+			Base\Translations::class,
+			Base\EnqueueAssets::class,
+			Pages\AdminPages::class,
+		);
 	}
 
 	/**

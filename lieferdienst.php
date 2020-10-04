@@ -34,6 +34,7 @@ namespace Lieferdienst;
 
 defined( 'ABSPATH' ) || die();
 
+// Initialize class loader
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 	require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
@@ -57,6 +58,6 @@ register_deactivation_hook( __FILE__, 'Lieferdienst\lieferdienst_deactivate' );
 /**
  * Plugin initialization
  */
-if ( class_exists( 'Inc\\Init' ) ) {
+if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
 	Inc\Init::registerServices();
 }
