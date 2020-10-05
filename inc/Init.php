@@ -14,8 +14,6 @@ class Init {
 
 	/**
 	 * List of all services to initialize.
-	 *
-	 * @return array List of service classes
 	 */
 	public static function getServices() {
 		return array(

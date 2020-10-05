@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lieferdienst 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lieferdienst\n"
-"POT-Creation-Date: 2020-10-04 18:57:10+00:00\n"
+"POT-Creation-Date: 2020-10-05 19:07:35+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,18 +24,18 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: inc/Pages/AdminPages.php:31 inc/Pages/AdminPages.php:44
-#: templates/admin-dashboard.php:2
+#: inc/Pages/AdminPages.php:40 inc/Pages/AdminPages.php:55
+#: templates/admin-dashboard.php:10
 msgid "Dashboard"
 msgstr ""
 
-#: inc/Pages/AdminPages.php:34 templates/admin-dashboard.php:2
-#: templates/admin-settings.php:2
+#: inc/Pages/AdminPages.php:43 templates/admin-dashboard.php:10
+#: templates/admin-settings.php:10
 msgid "Delivery Service"
 msgstr ""
 
-#: inc/Pages/AdminPages.php:54 inc/Pages/AdminPages.php:55
-#: inc/Pages/AdminPages.php:64 templates/admin-settings.php:2
+#: inc/Pages/AdminPages.php:68 inc/Pages/AdminPages.php:69
+#: inc/Pages/AdminPages.php:81 templates/admin-settings.php:10
 msgid "Settings"
 msgstr ""
 

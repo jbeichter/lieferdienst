@@ -1,5 +1,7 @@
 <?php
 /**
+ * Utility class
+ *
  * @package Lieferdienst
  */
 
@@ -22,23 +24,29 @@ class PluginUtil {
 	public $pluginUrl;
 	public $assetsUrl;
 
+	/**
+	 * PluginUtil constructor
+	 */
 	private function __construct() {
 		$this->pluginName = dirname( dirname( plugin_basename( __FILE__ ) ) );
-		$this->pluginKey = $this->pluginName . "/" . $this->pluginName . ".php";
+		$this->pluginKey  = $this->pluginName . '/' . $this->pluginName . '.php';
 
-		$this->pluginDir = dirname( dirname( __FILE__ ) );
+		$this->pluginDir                = dirname( dirname( __FILE__ ) );
 		$this->pluginRelTranslationsDir = $this->pluginName . '/languages';
-		$this->templatesDir = $this->pluginDir . '/templates';
+		$this->templatesDir             = $this->pluginDir . '/templates';
 
 		$this->pluginUrl = plugin_dir_url( $this->pluginDir );
 		$this->assetsUrl = $this->pluginUrl . '/assets';
 	}
 
+	/**
+	 * Get the singleton instance
+	 */
 	public static function getInstance() {
-		if ( PluginUtil::$instance == null ) {
-			PluginUtil::$instance = new PluginUtil();
+		if ( null === self::$instance ) {
+			self::$instance = new PluginUtil();
 		}
-		return PluginUtil::$instance;
+		return self::$instance;
 	}
 
 }

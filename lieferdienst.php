@@ -1,14 +1,16 @@
 <?php
 /**
- * Plugin Name:     Lieferdienst
- * Plugin URI:      https://github.com/jbeichter/lieferdienst
- * Description:     Manage simple form orders and their deliveries.
- * Author:          Johannes Beichter
- * Author URI:      https://github.com/jbeichter
- * License:         GPLv2 or later
- * Text Domain:     lieferdienst
- * Domain Path:     /languages
- * Version:         0.1.0
+ * Plugin Name:        Lieferdienst
+ * Plugin URI:         https://github.com/jbeichter/lieferdienst
+ * Description:        Manage simple form orders and their deliveries.
+ * Version:            0.1.0
+ * Author:             Johannes Beichter
+ * Author URI:         https://github.com/jbeichter
+ * License:            GPLv2 or later
+ * Text Domain:        lieferdienst
+ * Domain Path:        /languages
+ * Requires at least:  4.6
+ * Requires PHP:       5.6
  *
  * @package         Lieferdienst
  *
@@ -34,7 +36,7 @@ namespace Lieferdienst;
 
 defined( 'ABSPATH' ) || die();
 
-// Initialize class loader
+// Initialize class loader.
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 	require_once dirname( __FILE__ ) . '/vendor/autoload.php';
 }
@@ -43,7 +45,7 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
  * Plugin activation
  */
 function lieferdienst_activate() {
-	Inc\Base\Activation::activate();
+	Inc\Activation::activate();
 }
 register_activation_hook( __FILE__, 'Lieferdienst\lieferdienst_activate' );
 
@@ -51,7 +53,7 @@ register_activation_hook( __FILE__, 'Lieferdienst\lieferdienst_activate' );
  * Plugin deactivation
  */
 function lieferdienst_deactivate() {
-	Inc\Base\Activation::deactivate();
+	Inc\Activation::deactivate();
 }
 register_deactivation_hook( __FILE__, 'Lieferdienst\lieferdienst_deactivate' );
 
