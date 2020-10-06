@@ -4,13 +4,14 @@
  * Plugin URI:         https://github.com/jbeichter/lieferdienst
  * Description:        Manage simple form orders and their deliveries.
  * Version:            0.1.0
+ * Requires at least:  4.6
+ * Requires PHP:       5.6
  * Author:             Johannes Beichter
  * Author URI:         https://github.com/jbeichter
  * License:            GPLv2 or later
+ * License URI:        https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:        lieferdienst
  * Domain Path:        /languages
- * Requires at least:  4.6
- * Requires PHP:       5.6
  *
  * @package         Lieferdienst
  *
