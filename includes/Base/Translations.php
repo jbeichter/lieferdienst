@@ -25,7 +25,7 @@ class Translations extends PluginBase {
 	 * Load plugin's translation files
 	 */
 	public function loadTextdomain() {
-		load_plugin_textdomain( 'lieferdienst', false, $this->util->pluginRelTranslationsDir );
+		load_plugin_textdomain( 'lieferdienst', false, $this->util->translationsDirRel );
 	}
 
 }

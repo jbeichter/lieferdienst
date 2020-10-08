@@ -61,6 +61,7 @@ register_deactivation_hook( __FILE__, 'Lieferdienst\lieferdienst_deactivate' );
 /**
  * Plugin initialization
  */
-if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
+if ( class_exists( 'Lieferdienst\\Inc\\PluginUtil' ) && class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
+	Inc\PluginUtil::setPluginFile( __FILE__ );
 	Inc\Init::registerServices();
 }

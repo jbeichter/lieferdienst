@@ -8,7 +8,7 @@
 namespace Lieferdienst\Inc;
 
 /**
- * Initialize the plugin's service classes.
+ * Initialize the plugin.
  */
 class Init {
 
