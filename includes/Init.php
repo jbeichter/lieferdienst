@@ -20,6 +20,7 @@ class Init {
 			Base\Translations::class,
 			Base\EnqueueAssets::class,
 			Pages\AdminPages::class,
+		    Blocks\OrderForm\OrderFormBlock::class,
 		);
 	}
 
