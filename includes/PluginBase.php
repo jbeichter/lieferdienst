@@ -4,7 +4,6 @@
  *
  * @package Lieferdienst
  */
-
 namespace Lieferdienst\Inc;
 
 /**

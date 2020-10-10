@@ -1,10 +1,10 @@
 <?php
 /**
- * Handle plugin initialization, i.e. hook in all of the plugin's functionality into WordPress.
+ * Handle plugin initialization, i.e.
+ * hook in all of the plugin's functionality into WordPress.
  *
  * @package Lieferdienst
  */
-
 namespace Lieferdienst\Inc;
 
 /**
@@ -20,7 +20,7 @@ class Init {
 			Base\Translations::class,
 			Base\EnqueueAssets::class,
 			Pages\AdminPages::class,
-		    Blocks\OrderForm\OrderFormBlock::class,
+			Blocks\OrderForm\OrderFormBlock::class,
 		);
 	}
 
