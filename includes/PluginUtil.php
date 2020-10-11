@@ -19,6 +19,7 @@ class PluginUtil {
 	public $pluginKey;
 
 	public $pluginDir;
+	public $translationsDir;
 	public $translationsDirRel;
 	public $templatesDir;
 
@@ -33,6 +34,7 @@ class PluginUtil {
 		$this->pluginName = dirname( $this->pluginKey );
 
 		$this->pluginDir          = dirname( self::$pluginFile );
+		$this->translationsDir    = $this->pluginDir . '/languages';
 		$this->translationsDirRel = $this->pluginName . '/languages';
 		$this->templatesDir       = $this->pluginDir . '/templates';
 

@@ -36,7 +36,11 @@ class OrderFormBlock extends PluginBase {
     		$script_asset['dependencies'],
     		$script_asset['version']
     	);
-    	wp_set_script_translations( 'lieferdienst-orderform-block-editor', 'lieferdienst' );
+    	wp_set_script_translations(
+    		'lieferdienst-orderform-block-editor',
+    		'lieferdienst',
+    		$this->util->translationsDir
+    	);
 
     	$editor_css = 'build/index.css';
     	wp_register_style(
