@@ -34,18 +34,20 @@ if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
 	echo "class check successful" . PHP_EOL;
 } else {
 	echo "class check NOT successful" . PHP_EOL;
-}
+	$autoloader_file = dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php';
+	echo "searching for autoloader at {$autoloader_file}" . PHP_EOL;
 
-// Initialize class loader.
-if ( file_exists( dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php' ) ) {
-	echo "autoload found" . PHP_EOL;
-	require_once dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php';
-} else {
-	echo "autoload NOT found" . PHP_EOL;
-}
+	// Initialize class loader.
+	if ( file_exists( dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php' ) ) {
+		echo "autoload found" . PHP_EOL;
+		require_once dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php';
+	} else {
+		echo "autoload NOT found" . PHP_EOL;
+		if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
+			echo "class check successful" . PHP_EOL;
+		} else {
+			echo "class check NOT successful" . PHP_EOL;
+		}
+	}
 
-if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
-	echo "class check successful" . PHP_EOL;
-} else {
-	echo "class check NOT successful" . PHP_EOL;
 }
