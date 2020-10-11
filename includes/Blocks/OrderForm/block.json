@@ -2,9 +2,9 @@
 	"name": "lieferdienst/orderform",
 	"title": "Orderform",
 	"category": "widgets",
-	"icon": "smiley",
+	"icon": "cart",
 	"description": "Example block written with ESNext standard and JSX support – build step required.",
-	"textdomain": "orderform",
+	"textdomain": "lieferdienst",
 	"supports": {
 		"html": false
 	},

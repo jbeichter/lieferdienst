@@ -17,7 +17,7 @@ import { __ } from '@wordpress/i18n';
 export default function save() {
 	return (
 		<p>
-			{ __( 'Orderform – hello from the saved content!', 'orderform' ) }
+			{ __( 'Orderform – hello from the saved content!', 'lieferdienst' ) }
 		</p>
 	);
 }

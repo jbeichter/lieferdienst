@@ -27,7 +27,7 @@ import './editor.scss';
 export default function Edit( { className } ) {
 	return (
 		<p className={ className }>
-			{ __( 'Orderform – hello from the editor!', 'orderform' ) }
+			{ __( 'Orderform – hello from the editor!', 'lieferdienst' ) }
 		</p>
 	);
 }

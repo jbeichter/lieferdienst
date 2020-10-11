@@ -20,13 +20,13 @@ class OrderFormBlock extends PluginBase {
 	public function register() {
 	    add_action( 'init', array( $this, 'init_block' ) );
 	}
-	
+
 	/**
 	 * Initialize the block
 	 */
 	public function init_block() {
     	$dir = dirname( __FILE__ );
-    
+
     	$script_asset_path = "$dir/build/index.asset.php";
     	$index_js     = 'build/index.js';
     	$script_asset = require( $script_asset_path );
@@ -36,8 +36,8 @@ class OrderFormBlock extends PluginBase {
     		$script_asset['dependencies'],
     		$script_asset['version']
     	);
-    	wp_set_script_translations( 'lieferdienst-orderform-block-editor', 'orderform' );
-    
+    	wp_set_script_translations( 'lieferdienst-orderform-block-editor', 'lieferdienst' );
+
     	$editor_css = 'build/index.css';
     	wp_register_style(
     		'lieferdienst-orderform-block-editor',
@@ -45,7 +45,7 @@ class OrderFormBlock extends PluginBase {
     		array(),
     		filemtime( "$dir/$editor_css" )
     	);
-    
+
     	$style_css = 'build/style-index.css';
     	wp_register_style(
     		'lieferdienst-orderform-block',
@@ -53,12 +53,12 @@ class OrderFormBlock extends PluginBase {
     		array(),
     		filemtime( "$dir/$style_css" )
     	);
-    
+
     	register_block_type( 'lieferdienst/orderform', array(
     		'editor_script' => 'lieferdienst-orderform-block-editor',
     		'editor_style'  => 'lieferdienst-orderform-block-editor',
     		'style'         => 'lieferdienst-orderform-block',
     	) );
     }
-    
+
 }
