@@ -8,11 +8,8 @@ node_modules/
 *.tar.gz
 *.zip
 /build
+/vendor
 .idea/
 /.buildpath
 /.project
 /.settings
-/vendor/*
-!/vendor/autoload.php
-!/vendor/composer/
-/vendor/
