@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lieferdienst 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lieferdienst\n"
-"POT-Creation-Date: 2020-10-04 18:57:10+00:00\n"
-"PO-Revision-Date: 2020-10-04 20:57+0200\n"
+"POT-Creation-Date: 2020-10-11T09:15:42+00:00\n"
+"PO-Revision-Date: 2020-10-11 11:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -22,40 +22,62 @@ msgstr ""
 "X-Generator: Poedit 2.2.1\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/Pages/AdminPages.php:31 inc/Pages/AdminPages.php:44
+#. Plugin Name of the plugin
+msgid "Lieferdienst"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/jbeichter/lieferdienst"
+msgstr ""
+
+#. Description of the plugin
+msgid "Manage simple form orders and their deliveries."
+msgstr "Verwalte einfache Formular-Bestellungen und deren Lieferungen."
+
+#. Author of the plugin
+msgid "Johannes Beichter"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://github.com/jbeichter"
+msgstr ""
+
+#: includes/Pages/AdminPages.php:40 includes/Pages/AdminPages.php:55
 #: templates/admin-dashboard.php:2
 msgid "Dashboard"
 msgstr "Übersicht"
 
-#: inc/Pages/AdminPages.php:34 templates/admin-dashboard.php:2
+#: includes/Pages/AdminPages.php:43 templates/admin-dashboard.php:2
 #: templates/admin-settings.php:2
 msgid "Delivery Service"
 msgstr "Lieferdienst"
 
-#: inc/Pages/AdminPages.php:54 inc/Pages/AdminPages.php:55
-#: inc/Pages/AdminPages.php:64 templates/admin-settings.php:2
+#: includes/Pages/AdminPages.php:68 includes/Pages/AdminPages.php:69
+#: includes/Pages/AdminPages.php:81 templates/admin-settings.php:2
 msgid "Settings"
 msgstr "Einstellungen"
 
-#. Plugin Name of the plugin/theme
-msgid "Lieferdienst"
-msgstr ""
+#: includes/Blocks/OrderForm/build/index.js:1
+#: includes/Blocks/OrderForm/src/index.js:40
+msgid "Orderform"
+msgstr "Bestellformular"
 
-#. Plugin URI of the plugin/theme
-msgid "https://github.com/jbeichter/lieferdienst"
-msgstr ""
+#: includes/Blocks/OrderForm/build/index.js:1
+#: includes/Blocks/OrderForm/src/index.js:46
+msgid ""
+"Example block written with ESNext standard and JSX support – build step "
+"required."
+msgstr "Beispieltext."
 
-#. Description of the plugin/theme
-msgid "Manage simple form orders and their deliveries."
-msgstr "Verwalte einfache Formular-Bestellungen und deren Lieferungen."
+#: includes/Blocks/OrderForm/build/index.js:1
+#: includes/Blocks/OrderForm/src/edit.js:30
+msgid "Orderform – hello from the editor!"
+msgstr "Bestellformular - Editorvariante!"
 
-#. Author of the plugin/theme
-msgid "Johannes Beichter"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://github.com/jbeichter"
-msgstr ""
+#: includes/Blocks/OrderForm/build/index.js:1
+#: includes/Blocks/OrderForm/src/save.js:20
+msgid "Orderform – hello from the saved content!"
+msgstr "Bestellformular - Anzeigevariante!"
 
 #~ msgid "Delivery Service Settings"
 #~ msgstr "Lieferdienst Einstellungen"
