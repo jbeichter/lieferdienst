@@ -29,3 +29,8 @@ tests_add_filter( 'muplugins_loaded', '_lieferdienst_manually_load_plugin' );
 
 // Start up the WP testing environment.
 require $_lieferdienst_tests_dir . '/includes/bootstrap.php';
+
+// Initialize class loader.
+if ( file_exists( dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php' ) ) {
+	require_once dirname( dirname( __FILE__ ) ) . '/vendor/autoload.php';
+}
