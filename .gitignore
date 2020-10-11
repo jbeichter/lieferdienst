@@ -12,3 +12,7 @@ node_modules/
 /.buildpath
 /.project
 /.settings
+/vendor/*
+!/vendor/autoload.php
+!/vendor/composer/
+/vendor/
