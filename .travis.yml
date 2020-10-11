@@ -65,3 +65,6 @@ script:
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       phpcs
     fi
+
+after_success:
+  - travis_retry php vendor/bin/php-coveralls

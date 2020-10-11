@@ -23,6 +23,7 @@
 		"wp-coding-standards/wpcs" : "*",
 		"php-mock/php-mock-phpunit" : "2.1.2",
 		"rosio/wordpress-testing-harness" : "*",
-		"phpunit/phpunit" : "<8.0.0"
+		"phpunit/phpunit" : "<8.0.0",
+		"php-coveralls/php-coveralls" : "*"
 	}
 }
