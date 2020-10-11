@@ -46,31 +46,26 @@ before_script:
     else
       echo "xdebug.ini does not exist"
     fi
+  - composer install --dev --no-interaction
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
       bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
-      composer global require "phpunit/phpunit=4.8.*|5.7.*"
-      composer global require "php-coveralls/php-coveralls=*"
       mkdir -p build/logs
-    fi
-  - |
-    if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
-      composer global require dealerdirect/phpcodesniffer-composer-installer:^0.6 phpcompatibility/phpcompatibility-wp:* wp-coding-standards/wpcs:*
     fi
 
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      phpunit --coverage-clover build/logs/clover.xml
-      WP_MULTISITE=1 phpunit
+      vendor/bin/phpunit --coverage-clover build/logs/clover.xml
+      WP_MULTISITE=1 vendor/bin/phpunit
     fi
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
-      phpcs
+      vendor/bin/phpcs
     fi
 
 after_success:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      travis_retry php-coveralls --coverage_clover=build/logs/clover.xml -v
+      travis_retry vendor/bin/php-coveralls --coverage_clover=build/logs/clover.xml -v
     fi
