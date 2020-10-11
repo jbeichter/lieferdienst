@@ -64,6 +64,11 @@ before_script:
     if [[ "$WP_TRAVISCI" == "php-coveralls" ]] ; then
       composer global require "php-coveralls/php-coveralls=*"
     fi
+  - |
+    if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
+      composer global require wp-coding-standards/wpcs phpcompatibility/phpcompatibility-wp
+      phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs,$HOME/.composer/vendor/phpcompatibility/phpcompatibility-wp
+    fi
 
 script:
   - |
