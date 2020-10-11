@@ -1,5 +1,6 @@
 === Lieferdienst ===
 [![Build Status](https://api.travis-ci.org/jbeichter/lieferdienst.svg)](https://travis-ci.org/jbeichter/lieferdienst)
+[![Coverage Status](https://coveralls.io/repos/github/jbeichter/lieferdienst/badge.svg?branch=meister)](https://coveralls.io/github/jbeichter/lieferdienst?branch=meister)
 
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: https://example.com/
