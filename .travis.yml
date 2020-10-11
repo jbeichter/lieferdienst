@@ -41,7 +41,8 @@ before_script:
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then
-      phpenv config-rm xdebug.ini
+      echo "skip removal of xdebug"
+      echo "phpenv config-rm xdebug.ini"
     else
       echo "xdebug.ini does not exist"
     fi
@@ -71,6 +72,5 @@ script:
 after_success:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      travis_retry php vendor/bin/php-coveralls --coverage_clover=build/logs/clover.xml -v
+      travis_retry php-coveralls --coverage_clover=build/logs/clover.xml -v
     fi
-
