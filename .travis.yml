@@ -54,11 +54,13 @@ before_script:
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
       composer global require dealerdirect/phpcodesniffer-composer-installer:^0.6 phpcompatibility/phpcompatibility-wp:* wp-coding-standards/wpcs:*
     fi
+  - composer install --dev --no-interaction
+  - mkdir -p build/logs
 
 script:
   - |
     if [[ ! -z "$WP_VERSION" ]] ; then
-      phpunit
+      phpunit --coverage-clover build/logs/clover.xml
       WP_MULTISITE=1 phpunit
     fi
   - |
