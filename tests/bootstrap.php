@@ -39,13 +39,16 @@ if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
 	// Initialize class loader.
 	if ( file_exists( dirname( __DIR__ ) . '/vendor/autoload.php' ) ) {
 		require_once dirname( __DIR__ ) . '/vendor/autoload.php';
-	} else {
+	} elseif ( file_exists( dirname( __DIR__ ) . '/includes/_autoload/autoload.php' ) ) {
 		require_once dirname( __DIR__ ) . '/includes/_autoload/autoload.php';
-		if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
-			echo "class check successful" . PHP_EOL;
-		} else {
-			echo "class check NOT successful" . PHP_EOL;
-		}
+	} else {
+		echo "class loader not found" . PHP_EOL;
+		echo "directory: " . dirname( __DIR__ ) . PHP_EOL;
 	}
 
+	if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
+		echo "class check successful" . PHP_EOL;
+	} else {
+		echo "class check NOT successful" . PHP_EOL;
+	}
 }
