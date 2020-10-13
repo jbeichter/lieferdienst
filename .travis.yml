@@ -63,6 +63,7 @@ before_script:
   - |
     if [[ "$WP_TRAVISCI" == "php-coveralls" ]] ; then
       composer global require "php-coveralls/php-coveralls=*"
+      composer install --no-dev
     fi
   - |
     if [[ "$WP_TRAVISCI" == "phpcs" ]] ; then
