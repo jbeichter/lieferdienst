@@ -29,26 +29,3 @@ tests_add_filter( 'muplugins_loaded', '_lieferdienst_manually_load_plugin' );
 
 // Start up the WP testing environment.
 require $_lieferdienst_tests_dir . '/includes/bootstrap.php';
-
-
-if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
-	echo "class check successful" . PHP_EOL;
-} else {
-	echo "class check NOT successful" . PHP_EOL;
-
-	// Initialize class loader.
-	if ( file_exists( dirname( __DIR__ ) . '/vendor/autoload.php' ) ) {
-		require_once dirname( __DIR__ ) . '/vendor/autoload.php';
-	} elseif ( file_exists( dirname( __DIR__ ) . '/includes/_autoload/autoload.php' ) ) {
-		require_once dirname( __DIR__ ) . '/includes/_autoload/autoload.php';
-	} else {
-		echo "class loader not found" . PHP_EOL;
-		echo "directory: " . dirname( __DIR__ ) . PHP_EOL;
-	}
-
-	if ( class_exists( 'Lieferdienst\\Inc\\Init' ) ) {
-		echo "class check successful" . PHP_EOL;
-	} else {
-		echo "class check NOT successful" . PHP_EOL;
-	}
-}
