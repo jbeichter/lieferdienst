@@ -5,8 +5,8 @@
 	colors="true"
 	convertErrorsToExceptions="true"
 	convertNoticesToExceptions="true"
-	convertWarningsToExceptions="true"
-	>
+	convertWarningsToExceptions="true">
+	
 	<testsuites>
 		<testsuite name="unit">
 			<directory suffix="Test.php">tests/unit</directory>
@@ -15,10 +15,13 @@
 			<directory suffix="Test.php">tests/integration</directory>
 		</testsuite>
 	</testsuites>
+	
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
+        	<directory suffix=".php">.</directory>
             <directory suffix=".php">includes</directory>
             <directory suffix=".php">templates</directory>
         </whitelist>
     </filter>
+    
 </phpunit>
