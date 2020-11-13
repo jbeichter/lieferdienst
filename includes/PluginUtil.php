@@ -39,7 +39,7 @@ class PluginUtil {
 		$this->templatesDir       = $this->pluginDir . '/templates';
 
 		$this->pluginUrl = plugin_dir_url( self::$pluginFile );
-		$this->assetsUrl = plugins_url( self::$pluginFile, 'assets' );
+		$this->assetsUrl = plugins_url( 'assets', self::$pluginFile );
 	}
 
 	/**
